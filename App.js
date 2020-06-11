@@ -7,108 +7,44 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import {  View, Text } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
 
-const App: () => React$Node = () => {
-  return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </>
+export default app = () => {
+  return(
+    <View style={{
+      flex:1,
+      flexDirection: 'column',
+      backgroundColor: '#424242'}}>
+      <View style={{
+        flex:1,
+        marginTop: 5,
+        flexDirection: 'row',
+        backgroundColor: '#424242'
+        }}>
+        <View style={{width: '50%', padding: 4, marginRight: 1, backgroundColor: '#323232'}}><Text>oi</Text></View>
+        <View style={{width: '50%', padding: 5, marginLeft: 1, backgroundColor: '#323232'}}><Text>alo</Text></View>
+      </View>
+      <View style={{
+        flex:4,
+        marginBottom: 5,
+        marginTop: 5,
+        flexDirection: 'row',
+        backgroundColor: '#2C7FA8'
+        }}>
+        <View style={{width: '75%', padding: 4, marginRight: 1, backgroundColor: '#323232'}}><Text>oi</Text></View>
+        <View style={{flex:1, width: '25%', marginLeft: 1, backgroundColor: '#2C7FA8', flexDirection: 'column'}}>
+          <View style={{flex:3,marginBottom: 1,backgroundColor: '#323232'}}><Text>Ac</Text></View>
+          <View style={{flex:3,marginTop: 1,backgroundColor: '#323232'}}><Text>=</Text></View>
+        </View>
+      </View>
+    </View>
   );
-};
+}
 
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
-});
 
-export default App;
+
+
+
+
+
