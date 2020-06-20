@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, TextInput } from 'react-native'
 
 export default StyleSheet.create({
     container: {
@@ -13,7 +13,7 @@ export default StyleSheet.create({
         backgroundColor: '#424242'
     },
     displays: {
-        width: '50%', 
+        width: '100%', 
         padding: 4, 
         marginRight: 1, 
         backgroundColor: '#323232'
@@ -29,7 +29,9 @@ export default StyleSheet.create({
         width: '75%', 
         padding: 4, 
         marginRight: 1, 
-        backgroundColor: '#323232'
+        backgroundColor: '#323232',
+        alignItems:'center',
+        justifyContent:'space-around'
     },
     buttonsBody: {
         flex:1, 
@@ -52,6 +54,12 @@ export default StyleSheet.create({
     },
     buttonsFont: {
         fontSize:32, 
+        color:'#2C7FA8'
+    },
+    TextInput:{
+        width: '100%', 
+        backgroundColor: '#fff',
+        fontSize:20, 
         color:'#2C7FA8'
     }
    
